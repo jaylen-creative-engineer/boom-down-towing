@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { cn } from "@/lib/utils";
 import "./globals.css";
-import { fontSans, navigation_items, Navbar } from "@/components/ui";
+import { fontSans, navigation_items, Navbar, Footer } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Boom Down Towing",
@@ -23,6 +23,7 @@ export default function RootLayout({
       >
         <Navbar navItems={navigation_items} />
         {children}
+        <Footer />
       </body>
     </html>
   );
