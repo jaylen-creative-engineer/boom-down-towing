@@ -8,6 +8,13 @@
   gap: 120px;
 }
 
+@media (max-width: 900px) {
+  .component_container {
+    padding: 64px 20px;
+    gap: 88px;
+  }
+}
+
 .header_section {
   display: flex;
   flex-direction: column;
@@ -15,6 +22,12 @@
   align-content: center;
   gap: 16px;
   width: 100%;
+}
+
+@media (max-width: 900px) {
+  .header_section {
+    gap: 12px;
+  }
 }
 
 .header_tagline {
@@ -29,10 +42,22 @@
   text-align: center;
 }
 
+@media (max-width: 900px) {
+  .header_label {
+    font-size: 40px;
+  }
+}
+
 .services_subtitle {
   font-size: 18px;
   margin-top: 8px;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .services_subtitle {
+    font-size: 16px;
+  }
 }
 
 .services_container {
@@ -41,15 +66,41 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  gap: 18px;
+  gap: 42px;
+}
+
+@media (max-width: 900px) {
+  .services_container {
+    gap: 64px;
+  }
 }
 
 .service_item {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   gap: 48px;
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 900px) {
+  .service_item {
+    flex-direction: column;
+    gap: 42px;
+  }
+}
+
+.service_item.reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 900px) {
+  .service_item.reverse {
+    flex-direction: column;
+    gap: 42px;
+  }
 }
 
 .description_container {
@@ -64,6 +115,12 @@
 .service_label {
   font-size: 48px;
   font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .service_label {
+    font-size: 36px;
+  }
 }
 
 .service_description {

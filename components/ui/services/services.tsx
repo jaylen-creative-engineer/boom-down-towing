@@ -16,13 +16,7 @@ export const Services = ({ services }: { services: ServiceItem[] }) => {
       <div className="services_container">
         {services.map((service, index) => {
           return (
-            <div
-              className="service_item"
-              style={{
-                flexDirection: index % 2 === 0 ? "row" : "row-reverse",
-                justifyContent: "flex-start",
-              }}
-            >
+            <div className={`service_item ${index % 2 === 0 ? "" : "reverse"}`}>
               <Image
                 key={index}
                 src={service.image}

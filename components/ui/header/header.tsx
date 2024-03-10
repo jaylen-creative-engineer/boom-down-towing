@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Header = ({ carousel }: { carousel: CarouselItem[] }) => {
   return (
     <div className="component_container">
-      <div className="need_help_row">
+      <div className="need_help_section">
         <div className="need_help_column">
           <p className="need_help_label">Need Help?</p>
           <h1 className="call_label">Give us a Call</h1>

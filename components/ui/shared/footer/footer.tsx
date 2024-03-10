@@ -31,7 +31,7 @@ const information_navigation: NavigationItem[] = [
 export const Footer = ({}: {}) => {
   return (
     <div className="component_container">
-      <div className="navigation_row">
+      <div className="navigation_container">
         <h1 className="call_us_label">
           Enjoyed Our Service? Leave Us a Review!
         </h1>
