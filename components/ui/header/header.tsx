@@ -20,7 +20,7 @@ export const Header = ({ carousel }: { carousel: CarouselItem[] }) => {
           width={0}
           height={0}
           sizes="100vw"
-          style={{ width: "100%", height: "738px" }}
+          style={{ width: "100%", height: "auto" }}
         />
         <div className="carousel_controls">
           <div className="current_display_hstack">
