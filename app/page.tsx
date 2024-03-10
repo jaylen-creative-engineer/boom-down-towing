@@ -22,15 +22,15 @@ const carousel_items: CarouselItem[] = [
 
 const services: ServiceItem[] = [
   {
-    image: "next.svg",
+    image: "/placeholder_image.png",
     service_name: "Service 1",
   },
   {
-    image: "next.svg",
+    image: "/placeholder_image.png",
     service_name: "Service 2",
   },
   {
-    image: "next.svg",
+    image: "/placeholder_image.png",
     service_name: "Service 3",
   },
   // Add more items as needed
@@ -38,16 +38,20 @@ const services: ServiceItem[] = [
 
 const gallery_content: GalleryItem[] = [
   {
-    image: "next.svg",
+    image: "/placeholder_image.png",
     title: "Image 1",
   },
   {
-    image: "next.svg",
+    image: "/placeholder_image.png",
     title: "Image 2",
   },
   {
-    image: "next.svg",
+    image: "/placeholder_image.png",
     title: "Image 3",
+  },
+  {
+    image: "/placeholder_image.png",
+    title: "Image 4",
   },
   // Add more items as needed
 ];

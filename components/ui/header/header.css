@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: first baseline;
+  align-items: end;
   width: 100%;
 }
 
@@ -22,14 +22,18 @@
   justify-content: flex-start;
   align-content: flex-start;
   gap: 16px;
-
-  p {
-    font-size: 16px;
-    font-weight: 400;
-  }
 }
 
-h1 {
+.need_help_label {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.call_label {
+  font-size: 48px;
+}
+
+a {
   font-size: 48px;
 }
 
@@ -59,10 +63,11 @@ h1 {
   gap: 16px;
   justify-content: center;
   align-content: center;
+}
 
-  p {
-    font-size: 24px;
-  }
+.current_number_label,
+.current_category_label {
+  font-size: 24px;
 }
 
 .number_of_slides_row {
@@ -71,8 +76,8 @@ h1 {
   justify-content: center;
   align-content: center;
   gap: 40px;
+}
 
-  p {
-    font-size: 24px;
-  }
+.slide_number {
+  font-size: 24px;
 }

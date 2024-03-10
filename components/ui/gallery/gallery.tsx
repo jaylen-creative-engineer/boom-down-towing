@@ -1,3 +1,4 @@
+import "./gallery.css";
 import { GalleryItem } from "@/typings/GalleryItem";
 import Image from "next/image";
 
@@ -13,14 +14,14 @@ export const Gallery = ({ gallery }: { gallery: GalleryItem[] }) => {
         </p>
       </div>
       <div className="gallery_container">
-        {gallery.map((item, index) => (
-          <Image
-            key={index}
-            src={item.image}
-            alt={item.title}
-            className="gallery_image"
-          />
-        ))}
+        {gallery.map((item, index) => {
+          return (
+            <div className="gallery_item">
+              <div className="gallery_image"></div>
+              <p className="gallery_item_label">{item.title}</p>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

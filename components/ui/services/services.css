@@ -20,6 +20,7 @@
 .header_tagline {
   font-size: 16px;
   font-weight: 400;
+  text-align: center;
 }
 
 .header_label {
@@ -40,6 +41,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
+  gap: 18px;
 }
 
 .service_item {
@@ -47,11 +49,7 @@
   align-items: center;
   gap: 48px;
   width: 100%;
-}
-
-.service_image {
-  width: 600px;
-  height: 590px;
+  height: auto;
 }
 
 .description_container {

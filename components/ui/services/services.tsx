@@ -1,3 +1,4 @@
+import "./services.css";
 import { ServiceItem } from "@/typings/ServiceItem";
 import Image from "next/image";
 
@@ -26,7 +27,8 @@ export const Services = ({ services }: { services: ServiceItem[] }) => {
                 key={index}
                 src={service.image}
                 alt={service.service_name}
-                className="service_image"
+                width={600}
+                height={590}
               />
               <div className="description_container">
                 <h1 className="service_label">{service.service_name}</h1>

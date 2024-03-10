@@ -1,20 +1,60 @@
 import Image from "next/image";
+import "./footer.css";
+
+type NavigationItem = {
+  label: string;
+  link: string;
+};
+
+const general_navigation: NavigationItem[] = [
+  {
+    label: "Home",
+    link: "/home",
+  },
+  {
+    label: "Services",
+    link: "/services",
+  },
+  {
+    label: "Gallery",
+    link: "/gallery",
+  },
+];
+
+const information_navigation: NavigationItem[] = [
+  {
+    label: "Contact Us",
+    link: "/contact",
+  },
+];
 
 export const Footer = ({}: {}) => {
   return (
     <div className="component_container">
       <div className="navigation_row">
-        <h1>Enjoyed Our Service? Leave Us a Review!</h1>
+        <h1 className="call_us_label">
+          Enjoyed Our Service? Leave Us a Review!
+        </h1>
         <div className="navigation_section">
           <div className="navigation_column">
             <div className="navigation_label">General</div>
-            {/* A list built using map function. */}
-            <div className="navigation_items"></div>
+            {general_navigation.map((item, index) => {
+              return (
+                <a key={index} className="navigation_link">
+                  {item.label}
+                </a>
+              );
+            })}
           </div>
           <div className="navigation_column">
             <div className="navigation_label">Information</div>
-            {/* A list built using map function. */}
-            <div className="navigation_items"></div>
+            {information_navigation.map((item, index) => {
+              return (
+                <a key={index} className="navigation_link">
+                  {item.label}
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>

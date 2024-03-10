@@ -1,24 +1,37 @@
+import "./header.css";
 import { CarouselItem } from "@/typings/CarouselItem";
+import Image from "next/image";
 
 export const Header = ({ carousel }: { carousel: CarouselItem[] }) => {
   return (
     <div className="component_container">
       <div className="need_help_row">
         <div className="need_help_column">
-          <p>Need Help?</p>
-          <h1>Give us a Call</h1>
+          <p className="need_help_label">Need Help?</p>
+          <h1 className="call_label">Give us a Call</h1>
         </div>
-        <h1>1-800-123-4567</h1>
+        <a href="tel:+12155554567">1-800-123-4567</a>
       </div>
       <div className="carousel_container">
-        <div className="carousel"></div>
+        {/* <div className="carousel"></div> */}
+        <Image
+          src="/placeholder_image.png"
+          alt="Placeholder"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", height: "738px" }}
+        />
         <div className="carousel_controls">
           <div className="current_display_hstack">
-            <p>01</p>
-            <p>Tow</p>
+            <p className="current_number_label">01</p>
+            <p className="current_category_label">Tow</p>
           </div>
           <div className="number_of_slides_row">
-            <p>01</p>
+            <p className="slide_number">01</p>
+            <p className="slide_number">02</p>
+            <p className="slide_number">03</p>
+            <p className="slide_number">04</p>
           </div>
         </div>
       </div>
