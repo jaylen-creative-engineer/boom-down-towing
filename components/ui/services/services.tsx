@@ -1,9 +1,5 @@
+import { ServiceItem } from "@/typings/ServiceItem";
 import Image from "next/image";
-
-type ServiceItem = {
-  image: string;
-  service_name: string;
-};
 
 export const Services = ({ services }: { services: ServiceItem[] }) => {
   return (

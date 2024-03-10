@@ -1,4 +1,7 @@
-export const Gallery = ({ images }: { images: string[] }) => {
+import { GalleryItem } from "@/typings/GalleryItem";
+import Image from "next/image";
+
+export const Gallery = ({ gallery }: { gallery: GalleryItem[] }) => {
   return (
     <div className="component_container">
       <div className="header_section">
@@ -10,11 +13,11 @@ export const Gallery = ({ images }: { images: string[] }) => {
         </p>
       </div>
       <div className="gallery_container">
-        {images.map((image, index) => (
-          <img
+        {gallery.map((item, index) => (
+          <Image
             key={index}
-            src={image}
-            alt="Gallery Image"
+            src={item.image}
+            alt={item.title}
             className="gallery_image"
           />
         ))}

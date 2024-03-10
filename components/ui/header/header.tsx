@@ -1,14 +1,6 @@
-type HeaderCarousel = {
-  image: string;
-  title: string;
-  description: string;
-};
+import { CarouselItem } from "@/typings/CarouselItem";
 
-export const Header = ({
-  carousel_items,
-}: {
-  carousel_items: HeaderCarousel[];
-}) => {
+export const Header = ({ carousel }: { carousel: CarouselItem[] }) => {
   return (
     <div className="component_container">
       <div className="need_help_row">
