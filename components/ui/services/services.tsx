@@ -16,9 +16,11 @@ export const Services = ({ services }: { services: ServiceItem[] }) => {
       <div className="services_container">
         {services.map((service, index) => {
           return (
-            <div className={`service_item ${index % 2 === 0 ? "" : "reverse"}`}>
+            <div
+              className={`service_item ${index % 2 === 0 ? "" : "reverse"}`}
+              key={index}
+            >
               <Image
-                key={index}
                 src={service.image}
                 alt={service.service_name}
                 width={600}
