@@ -1,0 +1,42 @@
+.component_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 112px 64px;
+  overflow: none;
+  gap: 80px;
+}
+
+.header_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.header_tagline {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header_label {
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.gallery_subtitle {
+  font-size: 18px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.gallery_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 16px;
+  width: 100%;
+}

@@ -25,7 +25,9 @@ export const Header = ({
             <p>01</p>
             <p>Tow</p>
           </div>
-          <div className="number_of_slides_row"></div>
+          <div className="number_of_slides_row">
+            <p>01</p>
+          </div>
         </div>
       </div>
     </div>

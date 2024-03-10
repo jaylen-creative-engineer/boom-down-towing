@@ -1,0 +1,67 @@
+.component_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+  width: 100%;
+  padding: 40px 64px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.navigation_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  width: 100%;
+}
+
+.navigation_section {
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.navigation_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  gap: 16px;
+}
+
+.rights_reserved_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: first baseline;
+}
+
+.rights_reserved_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 24px;
+}
+
+.social_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 7px;
+}

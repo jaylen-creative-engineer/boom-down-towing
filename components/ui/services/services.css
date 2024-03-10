@@ -1,0 +1,76 @@
+.component_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+  width: 100%;
+  padding: 112px 64px;
+  gap: 112px;
+}
+
+.header_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.header_tagline {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header_label {
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.services_subtitle {
+  font-size: 18px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.services_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.service_item {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+}
+
+.service_image {
+  width: 600px;
+  height: 590px;
+}
+
+.description_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.service_label {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.service_description {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  word-wrap: normal;
+}
