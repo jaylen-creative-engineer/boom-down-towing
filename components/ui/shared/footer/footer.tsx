@@ -69,8 +69,23 @@ export const Footer = ({}: {}) => {
           <p>© 2024 Boom Down Towing. All Rights Reserved.</p>
         </div>
         <div className="social_row">
-          <button>Facebook</button>
-          <button>Instagram</button>
+          <button>
+            <Image
+              src="/ig_logo.png"
+              alt="Instagram Logo"
+              width={32}
+              height={32}
+            />
+          </button>
+          <button>
+            <Image
+              src="/facebook_logo.png"
+              alt="Facebook Logo"
+              width={32}
+              height={32}
+              style={{ borderRadius: "6.5px" }}
+            />
+          </button>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import "./services.css";
 import { ServiceItem } from "@/typings/ServiceItem";
 import Image from "next/image";
+import { BackgroundGradient } from "..";
 
 export const Services = ({ services }: { services: ServiceItem[] }) => {
   return (
@@ -20,12 +21,14 @@ export const Services = ({ services }: { services: ServiceItem[] }) => {
               className={`service_item ${index % 2 === 0 ? "" : "reverse"}`}
               key={index}
             >
-              <Image
-                src={service.image}
-                alt={service.service_name}
-                width={600}
-                height={590}
-              />
+              <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
+                <Image
+                  src={service.image}
+                  alt={service.service_name}
+                  width={600}
+                  height={590}
+                />
+              </BackgroundGradient>
               <div className="description_container">
                 <h1 className="service_label">{service.service_name}</h1>
                 <p className="service_description">
