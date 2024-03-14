@@ -1,0 +1,13 @@
+.bento_image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.bento_image {
+  border-radius: 0.75rem;
+}
+
+.description_container {
+  /* padding-bottom: 18px; */
+}

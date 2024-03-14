@@ -7,6 +7,7 @@ export { Gallery } from "./gallery/gallery";
 export { Navbar } from "./shared/navbar/navbar";
 export { Footer } from "./shared/footer/footer";
 export { BackgroundGradient } from "./shared/background_gradient/background_gradient";
+export { BentoGrid, BentoGridItem } from "./shared/bento_grid/bento_grid";
 
 // CONFIGS
 export { fontSans } from "./configs/font_name";

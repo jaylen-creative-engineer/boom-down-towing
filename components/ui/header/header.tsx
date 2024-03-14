@@ -15,11 +15,12 @@ export const Header = ({ carousel }: { carousel: CarouselItem[] }) => {
       <div className="carousel_container">
         {/* <div className="carousel"></div> */}
         <Image
-          src="/placeholder_image.png"
+          src="/banner_1.jpeg"
           alt="Placeholder"
           width={0}
           height={0}
           sizes="100vw"
+          className="carousel_image"
           style={{ width: "100%", height: "auto" }}
         />
         <div className="carousel_controls">

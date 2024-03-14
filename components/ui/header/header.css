@@ -78,6 +78,11 @@ a {
   height: auto;
 }
 
+.carousel_image {
+  border-radius: 32px;
+  box-shadow: 0px 4px 8px hsla(0, 0%, 0%, 0.05);
+}
+
 .carousel_controls {
   display: flex;
   flex-direction: row;
